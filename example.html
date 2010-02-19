@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="plug.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    AirPlane = function(){};
+    Rocket = function(){};
+    truck = function(){};
+    
+    expectGlobals('AirPlane', 'Rocket', 'Truck');
+    //-> WARN: Unexpected Global: "Truck"
+    //-> WARN: Expected "Truck" to be defined
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
